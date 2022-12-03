@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ui.screens.AuthScreenFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/auth_screen_left_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="@dimen/main_content_margin" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/auth_screen_right_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="@dimen/main_content_margin" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/auth_screen_header"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/source_sans_pro_semibold"
+            android:text="@string/auth_screen_header"
+            android:textSize="@dimen/header_size"
+            app:layout_constraintEnd_toEndOf="@id/auth_screen_right_guideline"
+            app:layout_constraintStart_toStartOf="@id/auth_screen_left_guideline"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/main_margin"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/username_text_input_layout"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/text_input_layout_height"
+            android:layout_marginTop="@dimen/main_margin"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:layout_constraintEnd_toEndOf="@id/auth_screen_right_guideline"
+            app:layout_constraintStart_toStartOf="@id/auth_screen_left_guideline"
+            app:layout_constraintTop_toBottomOf="@id/auth_screen_header"
+            android:hint="@string/username_text_input_hint">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/username_text_input_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/password_text_input_layout"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/text_input_layout_height"
+            android:layout_marginTop="@dimen/main_margin"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:layout_constraintEnd_toEndOf="@id/auth_screen_right_guideline"
+            app:layout_constraintStart_toStartOf="@id/auth_screen_left_guideline"
+            app:layout_constraintTop_toBottomOf="@id/username_text_input_layout"
+            android:hint="@string/password_text_input_hint" >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password_text_input_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/login_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login_btn_text"
+            android:layout_marginTop="@dimen/main_margin"
+            app:layout_constraintStart_toStartOf="@id/auth_screen_left_guideline"
+            app:layout_constraintTop_toBottomOf="@id/password_text_input_layout" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/reset_password_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/main_margin"
+            android:text="@string/reset_password_btn_text"
+            app:layout_constraintStart_toEndOf="@id/login_btn"
+            app:layout_constraintTop_toTopOf="@id/login_btn" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="header_size">24sp</dimen>
+    <dimen name="main_content_margin">20dp</dimen>
+    <dimen name="text_input_layout_height">62dp</dimen>
+    <dimen name="text_input_edit_text_height">48dp</dimen>
+    <dimen name="edit_text_corner_radius">12dp</dimen>
+    <dimen name="edit_text_border_size">2dp</dimen>
+    <dimen name="main_margin">16dp</dimen>
+</resources>

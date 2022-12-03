@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">The Movie Database</string>
+    <string name="auth_screen_header">Login to your account</string>
+    <string name="username_text_input_hint">username</string>
+    <string name="login_btn_text">Login</string>
+    <string name="reset_password_btn_text">Reset password</string>
+    <string name="password_text_input_hint">password</string>
 </resources>

@@ -3,7 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/niceg/AndroidStudioProjects/TheMovieDatabase/app/src/main/res/drawable/edit_text_bg.xml" value="0.1135" />
+        <entry key="..\:/Users/niceg/AndroidStudioProjects/TheMovieDatabase/app/src/main/res/font/font.xml" value="0.2101851851851852" />
         <entry key="..\:/Users/niceg/AndroidStudioProjects/TheMovieDatabase/app/src/main/res/layout/activity_main.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/niceg/AndroidStudioProjects/TheMovieDatabase/app/src/main/res/layout/fragment_auth_screen.xml" value="0.2" />
       </map>
     </option>
   </component>
